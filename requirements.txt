@@ -1,4 +1,5 @@
-install streamlit
-install pandas
-install numpy 
-install pickle
+streamlit
+pandas
+numpy 
+pickle
+scikit-learn
