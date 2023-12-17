@@ -37,8 +37,8 @@ with st.form("my_form"):
 
     
 
-    first=st.number_input("enter mp of front camera",value=0)
-    second=st.number_input("enter mp of back  camera",value=0)
+    first=st.number_input("enter mp of back camera",value=0)
+    second=st.number_input("enter mp of front  camera",value=0)
     
 
     
