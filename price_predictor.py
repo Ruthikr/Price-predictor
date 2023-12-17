@@ -15,7 +15,7 @@ with st.form("my_form"):
   
 
     storage=st.selectbox(
-    'select ram of the phone',
+    'select storage of the phone',
     (32,64,128,256,512))
 
 
@@ -33,19 +33,19 @@ with st.form("my_form"):
 
     
 
-    battery=st.slider('battery in "mah"',min_value=1000,max_value=10000,value=5000,step=500)
+    battery=st.slider('battery in "mah"',min_value=1000,max_value=10000,value=5000,step=100)
 
     
 
-    first=st.number_input("enter mp of first camera",value=0)
-    second=st.number_input("enter mp of second  camera",value=0)
+    first=st.number_input("enter mp of front camera",value=0)
+    second=st.number_input("enter mp of back  camera",value=0)
     
 
     
 
-    user_data=np.array([[brand,storage,ram,screen_size,battery,first,second,0]])
+    user_data=np.array([[brand,storage,ram,screen_size,battery,firsr,second,0]])
     result=model.predict(user_data)
 
     submitted = st.form_submit_button("Submit")
     if submitted:
-        st.title("{} inr".format(round(result[0]*80)))
+        st.title("{} inr".format(round(result[0]*70)))
