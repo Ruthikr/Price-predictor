@@ -43,7 +43,7 @@ with st.form("my_form"):
 
     
 
-    user_data=np.array([[brand,storage,ram,screen_size,battery,firsr,second,0]])
+    user_data=np.array([[brand,storage,ram,screen_size,battery,first,second,0]])
     result=model.predict(user_data)
 
     submitted = st.form_submit_button("Submit")
