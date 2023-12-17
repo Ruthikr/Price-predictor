@@ -11,9 +11,9 @@ with st.form("my_form"):
        'Realme', 'Motorola', 'Nokia', 'Sony', 'LG', 'Asus', 'Blackberry',
        'CAT', 'Huawei'))
 
- 
+st.divider() 
 
-    st.divider()
+  
 
     storage=st.selectbox(
     'select ram of the phone',
