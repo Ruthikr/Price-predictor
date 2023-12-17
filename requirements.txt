@@ -1,0 +1,4 @@
+install streamlit
+install pandas
+install numpy 
+install pickle
