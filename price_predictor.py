@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-import streamlit as st
 model=pickle.load(open("price_pipe_update.pkl","rb"))
 st.title("Phone Price Predictor")
 with st.form("my_form"):
