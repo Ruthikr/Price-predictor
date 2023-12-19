@@ -38,12 +38,12 @@ with st.form("my_form"):
     
 
     first=st.number_input("enter mp of back camera",value=0)
-    second=st.number_input("enter mp of front  camera",value=0)
+   # second=st.number_input("enter mp of front  camera",value=0)
     
 
     
 
-    user_data=np.array([[brand,storage,ram,screen_size,battery,first,second,0]])
+    user_data=np.array([[brand,storage,ram,screen_size,battery,first,0,0]])
     result=model.predict(user_data)
 
     submitted = st.form_submit_button("Submit")
