@@ -54,4 +54,4 @@ if submitted:
         st.title("Estimated price : {} inr".format(round(result[0]*80)))
         x=num2words(round(result[0]*72))
        
-        st.write(f"{x.upper()} RUPEES")
+        st.write(f"{num2words(round(result[0]*72))} RUPEES")
