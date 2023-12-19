@@ -49,4 +49,5 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Predict")
 if submitted:
         st.title("Estimated price : {} inr".format(round(result[0]*72)))
+        st.write(f"estimated : :blue[{round(result[0]*72)}]")
     
