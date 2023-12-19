@@ -48,6 +48,6 @@ with st.form("my_form"):
 
     submitted = st.form_submit_button("Predict")
 if submitted:
-        st.sucess("Estimated price : {} inr".format(round(result[0]*72)))
+        st.success("Estimated price : {} inr".format(round(result[0]*72)))
     
     
