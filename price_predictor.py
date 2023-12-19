@@ -55,6 +55,5 @@ if submitted:
         x=round(result[0]*72)
         y=num2words(x)
      
-        st.write((num2words(y)))
-        st.write(type(y))
-    
+        st.write(y)
+        st.write(y.upper())
