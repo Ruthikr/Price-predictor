@@ -53,6 +53,6 @@ with st.form("my_form"):
 if submitted:
         st.title("Estimated price : {} inr".format(round(result[0]*72)))
         x=round(result[0]*72)
-        st.title(num2words(x))
+        st.title(upper((num2words(x))))
     
     
