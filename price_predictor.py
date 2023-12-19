@@ -2,29 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-
-def convert_to_words(num):  
-    if num == 0:  
-        return "zero"  
-    ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]  
-    tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]  
-    teens = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]  
-    words = ""  
-    if num>= 1000:  
-        words += ones[num // 1000] + " thousand "  
-        num %= 1000  
-    if num>= 100:  
-        words += ones[num // 100] + " hundred "  
-        num %= 100  
-    if num>= 10 and num<= 19:  
-        words += teens[num - 10] + " "  
-        num = 0  
-    elif num>= 20:  
-        words += tens[num // 10] + " "  
-        num %= 10  
-    if num>= 1 and num<= 9:  
-        words += ones[num] + " "  
-    return words.strip()
+from num2words import num2words
 
 
 model=pickle.load(open("price_pipe_update.pkl","rb"))
@@ -75,6 +53,6 @@ with st.form("my_form"):
 if submitted:
         st.title("Estimated price : {} inr".format(round(result[0]*72)))
         x=round(result[0]*72)
-        st.title(convert_to_words(x))
+        st.title(num2words(x))
     
     
