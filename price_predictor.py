@@ -46,6 +46,7 @@ with st.form("my_form"):
     user_data=np.array([[brand,storage,ram,screen_size,battery,first,0,0]])
     result=model.predict(user_data)
 
-    submitted = st.form_submit_button("Submit")
-    if submitted:
+    submitted = st.form_submit_button("Predict")
+if submitted:
         st.title("Estimated price : {} inr".format(round(result[0]*72)))
+    
