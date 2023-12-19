@@ -7,7 +7,7 @@ st.title("Phone Price Predictor")
 with st.form("my_form"):
     brand= st.selectbox(
     'select the brand of the phone',
-    ('Apple', 'Samsung', 'OnePlus', 'Xiaomi', 'Google', 'Oppo', 'Vivo',
+    ('Samsunh','Apple', 'OnePlus', 'Xiaomi', 'Google', 'Oppo', 'Vivo',
        'Realme', 'Motorola', 'Nokia', 'Sony', 'LG', 'Asus', 'Blackberry',
        'CAT', 'Huawei'))
 
