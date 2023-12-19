@@ -48,4 +48,4 @@ with st.form("my_form"):
 
     submitted = st.form_submit_button("Submit")
     if submitted:
-        st.title("{} inr".format(round(result[0]*72)))
+        st.title("Estimated price : {} inr".format(round(result[0]*72)))
