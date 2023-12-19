@@ -56,5 +56,5 @@ if submitted:
         y=num2words(x)
      
         st.write((num2words(y)))
-        st.write(type(y)
+        st.write(type(y))
     
