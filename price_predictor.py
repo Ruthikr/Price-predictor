@@ -51,7 +51,7 @@ with st.form("my_form"):
 
     submitted = st.form_submit_button("Predict")
 if submitted:
-        st.title(model.predict(user_data)[0])
+        st.title(model.predict(user_data)[0]*80)
         st.title("Estimated price : {} inr".format(round(result[0]*80)))
         x=num2words(round(result[0]*72))
        
